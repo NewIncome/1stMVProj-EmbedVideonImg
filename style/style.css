@@ -1,16 +1,17 @@
 body {
-	font-size: 0.7em !important;
+  font-size: 0.7em !important;
 }
+
 @media (min-width: 768px) {
-.navbar-brand.abs
-    {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        text-align: center;
-    }
+  .navbar-brand.abs {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
 }
 
 .form-inline {
-	display: contents !important;
+  display: contents !important;
 }
+
