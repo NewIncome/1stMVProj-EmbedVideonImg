@@ -24,7 +24,6 @@ body {
 /* Create three unequal columns that sits next to each other */
 .column {
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
 }
 
 /* Left and right column */
@@ -71,7 +70,9 @@ body {
   font-size: 17px;
 }
 
-
+.form-inline {
+  display: flex;
+}
 
 .topnav-centered a {
   float: none;
@@ -91,7 +92,7 @@ body {
     float: none;
     display: block;
   }
-  
+
   .topnav-centered a {
     position: relative;
     top: 0;
@@ -100,8 +101,71 @@ body {
   }
 }
 
+.subs-container{
+  height: 20px;
+}
 
+.btn-subs {
+  height: inherit;
+  border: none;
+  background-color: red;
+  color: white;
+  margin-top: 8px;
+}
 
+.btn-subs {
+  height: inherit;
+}
+
+.subs-container>.qtd-subs {
+  font-size: 0.8em;
+  padding: 2px;
+  color: rgb(115, 115, 115);
+  background-color: rgb(250, 250, 250);
+  border-radius: 0px 10px 10px 0px;
+  border-width: 1px;
+  border-style: solid solid solid none;
+}
+
+.owner-channel{
+  display: flex;
+}
+
+.owner-img{
+  padding-right: 10px;
+  padding-bottom: 8px;
+}
+
+.owner-info{
+  margin-left: 10px;
+}
+
+.owner-info > p{
+  margin: 0;
+}
+
+.video-views{
+  position: relative;
+  width: 80%;
+}
+
+.video-views > p {
+  float: right;
+}
+
+.action-btns {
+  padding-top: 10px;
+  border-top: 1px solid rgb(226, 226, 226);
+}
+
+.left-btns {
+  position: relative;
+  float: left;
+}
+
+.right-btns {
+  float: right;
+}
 
 ul.nav-section {
   display: inline;
