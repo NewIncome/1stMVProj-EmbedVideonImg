@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Youtube</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="navbar">
+        <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+            <a href="/" class="navbar-brand d-flex w-50 mr-auto">
+                <img src="./images/youtube.jpg" width="120" height="80" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                <form class="form-inline" action="/action_page.php">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                </form>
+                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; display: block; width: 30px; height: 30px;" class="style-scope yt-icon">
+                                <g class="style-scope yt-icon">
+                                    <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z" class="style-scope yt-icon"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; display: block; width: 30px; height: 30px;" class="style-scope yt-icon">
+                                <g class="style-scope yt-icon">
+                                    <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z" class="style-scope yt-icon"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; display: block; width: 30px; height: 30px;" class="style-scope yt-icon">
+                                <g class="style-scope yt-icon">
+                                    <path d="M12.04 4C17 4 21 7.7 21 12.3c0 4.57-4 8.28-8.96 8.28-1.76 0-3.4-.47-4.8-1.28-.15-.1-.35-.1-.52-.04-1.58.68-2.8.88-3.45.93-.2 0-.34-.26-.22-.4.6-.9 1.08-1.8 1.43-2.5.1-.2.1-.46-.04-.65C3.58 15.4 3.1 13.9 3.1 12.3c0-4.6 4-8.3 8.94-8.3zm1.6 9.56v1.58c0 .17.22.25.34.13l3.43-3.34c.1-.07.1-.2 0-.27L14 8.32c-.12-.12-.33-.04-.33.13V10c0 .1-.07.18-.17.2-3.38.52-5.04 2.73-5.74 5.1-.06.2.2.34.32.2 1.3-1.42 3.05-2.1 5.4-2.13.1 0 .2.1.2.2z" class="style-scope yt-icon"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; display: block; width: 30px; height: 30px;" class="style-scope yt-icon">
+                                <g class="style-scope yt-icon">
+                                    <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" class="style-scope yt-icon"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <main id="video-description-btns" class="col-md-8">
+                <div class="bs-example" data-example-id="responsive-embed-16by9-iframe-youtube">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Y-JQ-RCyPpQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <p>#BossaNova #Jazz #StudyMusic</p>
+                    <h5>Relaxing Bossa Nova & Jazz Music For Study - Smooth Jazz Music - Background Music</h5>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>7,269,980 views • Published on Sep 16, 2018</p>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-light"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; display: block; width: 20px; height: 20px;" class="style-scope yt-icon"><g class="style-scope yt-icon">
+            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path>
+             </g></svg></button>52K
+                        <button type="button" class="btn btn-outline-light"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; display: block; width: 20px; height: 20px;" class="style-scope yt-icon"><g class="style-scope yt-icon">
+        <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path>
+      </g></svg></button>1.3K
+                        <button type="button" class="btn btn-outline-light"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; display: block; width: 20px; height: 20px;" class="style-scope yt-icon"><g class="style-scope yt-icon">
+        
+        <path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z" class="style-scope yt-icon"></path>
+      </g></svg></button>SHARE
+                        <button type="button" class="btn btn-outline-light"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; display: block; width: 20px; height: 20px;" class="style-scope yt-icon"><g class="style-scope yt-icon">
+        <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z" class="style-scope yt-icon"></path>
+      </g></svg></button>SAVE
+
+                    </div>
+                </div>
+            </main>
+            <aside class="col-md-4">
+                <div class="row">
+                    <div class="col">
+                        <img src="https://i.ytimg.com/vi/eZaQf0Wb7iI/hqdefault_live.jpg?sqp=CMjh_-sF-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDrq-xbwTz0i3hnlPe2cSy3slLSuQ" alt="">
+                    </div>
+                    <div class="col">
+                        <h6><strong>Video description goes here</strong></h6>
+                        <p>Category<br/> 3.2M Views</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://i.ytimg.com/vi/A9sOb_r6Hy0/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDdslKrBa3Sb5QuvBciJ1A8fQFETA" alt="">
+                    </div>
+                    <div class="col">
+                        <h6><strong>Video description goes here</strong></h6>
+                        <p>Category<br/> 3.2M Views</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://i.ytimg.com/vi/ECXG6_m1_28/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLANNnY1c-lbu1d1pCy_vv51XstYtA" alt="">
+                    </div>
+                    <div class="col">
+                        <h6><strong>Video description goes here</strong></h6>
+                        <p>Category<br/> 3.2M Views</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://i.ytimg.com/vi/74iHoCM83Mg/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLCFuCIhfBZhF67qkeLHnh24IuDEJw" alt="">
+                    </div>
+                    <div class="col">
+                        <h6><strong>Video description goes here</strong></h6>
+                        <p>Category<br/> 3.2M Views</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://i.ytimg.com/vi/RDjimODZtQM/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLB_PvQVxNS_W8W06SHTMzpiUE6_dQ" alt="">
+                    </div>
+                    <div class="col">
+                        <h6><strong>Video description goes here</strong></h6>
+                        <p>Category<br/> 3.2M Views</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://i.ytimg.com/vi/yI8q4AmgHqs/hqdefault_live.jpg?sqp=CMjh_-sF-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDeROvd50XdL-M62k29KLU9H24AoA" alt="">
+                    </div>
+                    <div class="col">
+                        <h6><strong>Video description goes here</strong></h6>
+                        <p>Category<br/> 3.2M Views</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://i.ytimg.com/vi/vLEek3I3wac/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLB1Y5U6TTO4ijz-F7LAvs4NySuQJw" alt="">
+                    </div>
+                    <div class="col">
+                        <h6><strong>Video description goes here</strong></h6>
+                        <p>Category<br/> 3.2M Views</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://i.ytimg.com/vi/MizPu-dTPQU/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLA9l5l0QZl6LNYv0-_boC-O4Q-xRg" alt="">
+                    </div>
+                    <div class="col">
+                        <h6><strong>Video description goes here</strong></h6>
+                        <p>Category<br/> 3.2M Views</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://i.ytimg.com/vi/icS__xweWnU/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBh8juFEIWnWYXFQAPHaFtNy12mzA" alt="">
+                    </div>
+                    <div class="col">
+                        <h6><strong>Video description goes here</strong></h6>
+                        <p>Category<br/> 3.2M Views</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://i.ytimg.com/vi/-7_ZuR7gFgc/hqdefault_live.jpg?sqp=CMjh_-sF-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLAqSFsIiz-RqMfeSpBaAiAmGy6cvg" alt="">
+                    </div>
+                    <div class="col">
+                        <h6><strong>Video description goes here</strong></h6>
+                        <p>Category<br/> 3.2M Views</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://i.ytimg.com/vi/zROSAakJ7tc/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLAu0jjA8mdqGLia6qB24JkJNpqD4g" alt="">
+                    </div>
+                    <div class="col">
+                        <h6><strong>Video description goes here</strong></h6>
+                        <p>Category<br/> 3.2M Views</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://i.ytimg.com/vi/io85zAxiA0E/hqdefault_live.jpg?sqp=CMjh_-sF-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDtGDE5AJ67nJMuJbiGjWHU4u5BtQ" alt="">
+                    </div>
+                    <div class="col">
+                        <h6><strong>Video description goes here</strong></h6>
+                        <p>Category<br/> 3.2M Views</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://i.ytimg.com/vi/o26qoCYLdS8/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLAfmXdGp8BpIck1_WzyIONbP7qEyQ" alt="">
+                    </div>
+                    <div class="col">
+                        <h6><strong>Video description goes here</strong></h6>
+                        <p>Category<br/> 3.2M Views</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="https://i.ytimg.com/vi/3jWRrafhO7M/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDPQhd66Pks0uIMYhmUpaDUGMF8Gw" alt="">
+                    </div>
+                    <div class="col">
+                        <h6><strong>Video description goes here</strong></h6>
+                        <p>Category<br/> 3.2M Views</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+
+</html>
