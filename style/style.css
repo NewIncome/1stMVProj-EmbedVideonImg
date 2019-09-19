@@ -145,6 +145,7 @@ h4 {
     float: none;
     display: block;
   }
+
   .topnav-centered a {
     position: relative;
     top: 0;
@@ -215,11 +216,7 @@ h4 {
   float: right;
 }
 
-ul.nav-section {
-  display: inline;
-}
-
-ul.nav-section, .logo {
+.logo {
   float: left;
 }
 
