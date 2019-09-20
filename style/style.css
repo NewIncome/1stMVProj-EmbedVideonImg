@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+
+.header {
+  background-color: #f1f1f1;
+  padding: 0;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 8px;
+}
+
+/* Container for flexboxes */
+
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Create three unequal columns that sits next to each other */
+
+.column {
+  padding: 10px;
+}
+
+/* Left and right column */
+
+.column.side {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-right: 70px;
+  flex-direction: column;
+}
+
+.op-video {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.op-video img {
+  width: 40%;
+  padding: 10px;
+}
+
+.op-video div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+  padding: 10px;
+}
+
+h4 {
+  margin-top: 0;
+}
+
+.op-video p {
+  margin: 0;
+  font-size: 0.7em;
+  width: 100%;
+}
+
+/* Middle column */
+
+.column.middle {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  margin-left: 70px;
+}
+
+.column.middle > video {
+  padding-top: 10px;
+  width: 100%;
+}
+
+/* Style the footer */
+
+.footer {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+/* ------  NavBar ------ */
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.form-inline {
+  display: flex;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-centered form {
+  float: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+
+@media screen and (max-width: 600px) {
+  .topnav a,
+  .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+.subs-container {
+  height: 20px;
+}
+
+.btn-subs {
+  height: inherit;
+  border: none;
+  background-color: red;
+  color: white;
+  margin-top: 8px;
+}
+
+.subs-container > .qtd-subs {
+  font-size: 0.8em;
+  padding: 2px;
+  color: rgb(115, 115, 115);
+  background-color: rgb(250, 250, 250);
+  border-radius: 0 10px 10px 0;
+  border-width: 1px;
+  border-style: solid solid solid none;
+}
+
+.owner-channel {
+  display: flex;
+}
+
+.owner-img {
+  padding-right: 10px;
+  padding-bottom: 8px;
+}
+
+.owner-info {
+  margin-left: 10px;
+}
+
+.owner-info > p {
+  margin: 0;
+}
+
+.video-views {
+  position: relative;
+  width: 80%;
+}
+
+.video-views > p {
+  float: right;
+}
+
+.action-btns {
+  padding-top: 10px;
+  border-top: 1px solid rgb(226, 226, 226);
+}
+
+.left-btns {
+  position: relative;
+  float: left;
+}
+
+.right-btns {
+  float: right;
+}
+
+.logo {
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+.topnav ul li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.logo > img {
+  height: 40px;
+}
+
+li.nav-right {
+  float: right;
+}
