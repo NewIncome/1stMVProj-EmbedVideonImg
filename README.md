@@ -9,10 +9,10 @@ Using only HTML and CSS in this project.
 Githack Clone link:
 
 Production: 
-https://rawcdn.githack.com/NewIncome/1stMVProj-EmbedVideonImg/63d0898e725a5ca0bd04d2dbf0d99d44140a5f9c/index.html
+https://rawcdn.githack.com/NewIncome/1stMVProj-EmbedVideonImg/a6d0de304affd5cc50297517471a3ead5a440201/index.html
 
 Development: 
-https://raw.githack.com/NewIncome/1stMVProj-EmbedVideonImg/feature/index.html
+https://raw.githack.com/NewIncome/1stMVProj-EmbedVideonImg/master/index.html
 
 
 
